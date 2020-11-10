@@ -1,11 +1,16 @@
 import React from "react";
 import "./style.css";
+import { DemoComponent } from "./DemoComponent";
+import { Example } from "./Example";
 
-export default function App() {
+const App = () => {
+  const [time, setTime] = React.useState(200);
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Example time={time} />
+      <DemoComponent time={time} onChange={setTime} />
     </div>
   );
-}
+};
+
+export default App;
