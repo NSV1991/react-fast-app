@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Example = ({ time, onChange }) => {
+export const Example = ({ time }) => {
   const [value, setValue] = React.useState("");
   return (
     <div>
